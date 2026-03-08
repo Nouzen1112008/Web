@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Tường: Vincent van Gogh</title>
+    <style>
+        /* Cài đặt chung */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4ecd8; /* Màu nền giấy nến cổ điển */
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Khung báo tường */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #fffaf0;
+            padding: 40px;
+            border: 8px double #8b5a2b; /* Viền đôi màu nâu gỗ */
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        /* Phần Tiêu đề */
+        header {
+            text-align: center;
+            border-bottom: 3px solid #8b5a2b;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #1a365d; /* Xanh dương đậm như Starry Night */
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p.subtitle {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #b8860b; /* Vàng hoa hướng dương */
+            margin-top: 5px;
+        }
+
+        /* Bố cục chia cột cho nội dung */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .column-main {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .column-side {
+            flex: 1;
+            min-width: 250px;
+            background-color: #e8f0fe;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #1a365d;
+        }
+
+        /* Phần Trưng bày tranh (Gallery) */
+        .gallery {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .artwork {
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .artwork img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 10px;
+        }
+
+        .artwork h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+            color: #8b5a2b;
+        }
+
+        /* Trích dẫn */
+        .quote-box {
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #1a365d;
+            color: #f1c40f;
+            text-align: center;
+            font-size: 1.5em;
+            font-style: italic;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed #8b5a2b;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Vincent van Gogh</h1>
+            <p class="subtitle">Kẻ Đuổi Theo Mặt Trời & Những Vì Sao</p>
+        </header>
+
+        <div class="content-row">
+            <div class="column-main">
+                <h2>Tiểu sử tóm tắt</h2>
+                <p><strong>Vincent Willem van Gogh</strong> (30/3/1853 – 29/7/1890) là một họa sĩ Hậu Ấn tượng người Hà Lan, được đánh giá là một trong những nhân vật nổi tiếng và có ảnh hưởng nhất trong lịch sử nghệ thuật phương Tây.</p>
+                <p>Trong hơn một thập kỷ, ông đã sáng tạo ra khoảng 2.100 tác phẩm nghệ thuật, trong đó có khoảng 860 bức tranh sơn dầu, hầu hết đều được vẽ trong hai năm cuối đời. Tác phẩm của ông bao gồm phong cảnh, tĩnh vật, chân dung và tự họa, đặc trưng bởi màu sắc đậm và nét cọ bốc đồng, biểu cảm.</p>
+                <p>Mặc dù sinh thời ông không gặp nhiều may mắn và phải vật lộn với các vấn đề tâm lý, nhưng những di sản ông để lại cho thế giới là vô giá.</p>
+            </div>
+
+            <div class="column-side">
+                <h2>Góc Sự Thật Thú Vị</h2>
+                <ul>
+                    <li>Van Gogh chỉ bán được <strong>một</strong> bức tranh duy nhất khi còn sống (bức <em>The Red Vineyard</em>).</li>
+                    <li>Ông bắt đầu sự nghiệp họa sĩ khá muộn, vào năm 27 tuổi.</li>
+                    <li>Ông đã viết hơn 800 bức thư, phần lớn là gửi cho người em trai tên Theo, người luôn ủng hộ ông về cả tinh thần lẫn tài chính.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="quote-box">
+            "Tôi mơ về việc vẽ, và rồi tôi vẽ giấc mơ của mình." <br>
+            <span style="font-size: 0.7em; color: #fff;">- Vincent van Gogh -</span>
+        </div>
+
+        <h2>Phòng Tranh Tiêu Biểu</h2>
+        <div class="gallery">
+            <div class="artwork">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/800px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Đêm Đầy Sao">
+                <h3>Đêm Đầy Sao (1889)</h3>
+                <p>Một trong những tác phẩm nổi tiếng nhất thế giới, khắc họa bầu trời đêm cuộn xoáy qua góc nhìn từ phòng bệnh viện tâm thần của ông.</p>
+            </div>
+            <div class="artwork">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Vincent_Willem_van_Gogh_127.jpg/800px-Vincent_Willem_van_Gogh_127.jpg" alt="Hoa Hướng Dương">
+                <h3>Hoa Hướng Dương (1888)</h3>
+                <p>Biểu tượng của sự sống và tình bạn. Van Gogh dùng màu vàng để thể hiện niềm hy vọng và ánh sáng rực rỡ.</p>
+            </div>
+            <div class="artwork">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/800px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" alt="Chân dung tự họa">
+                <h3>Chân dung tự họa (1889)</h3>
+                <p>Van Gogh vẽ rất nhiều chân dung tự họa vì ông không có tiền để thuê người mẫu.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Báo tường được thực hiện bởi <strong>[Tên của bạn]</strong></p>
+            <p>Được lưu trữ miễn phí trên GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
